@@ -10,8 +10,5 @@ public class MainApp {
 
         driver.get("https://www.hepsiburada.com");
 
-
-
-
     }
 }
