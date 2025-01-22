@@ -25,19 +25,8 @@ public class _05_FindingByName {
         WebElement clickBtn = driver.findElement(By.id("input_2"));
         clickBtn.click();
 
-
-
         MyFunc.Wait(5);
         driver.quit();
-
-
-
-
-
-
-
-
-
 
     }
 }
