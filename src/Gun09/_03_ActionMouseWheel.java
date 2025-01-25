@@ -25,6 +25,7 @@ public class _03_ActionMouseWheel extends BaseDriver {
 
     @Test
     public void Action_mw_ts2(){
+        // driver = new ChromeDriver();     // coklu calisma icin
         // belli bir miktar kadar scroll
         driver.get("https://www.selenium.dev/selenium/web/scrolling_tests/frame_with_nested_scrolling_frame_out_of_view.html");
         MyFunc.Wait(3);
@@ -36,7 +37,8 @@ public class _03_ActionMouseWheel extends BaseDriver {
 
     @Test
     public void Action_mw_ts3(){
-        // belli bir miktar kadar scroll
+        // driver = new ChromeDriver();     // coklu calisma icin
+        // belli bir miktar kadar adim adim scroll
         driver.get("https://www.selenium.dev/selenium/web/scrolling_tests/frame_with_nested_scrolling_frame_out_of_view.html");
         MyFunc.Wait(3);
         WebElement iframe = driver.findElement(By.name("nested_scrolling_frame"));
