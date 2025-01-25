@@ -11,8 +11,8 @@ public class BaseDriver {
     static{     // bunun sarti extends olmasi ve basta yer almasi
         driver=new ChromeDriver();
         driver.manage().window().maximize();    // ekrani max yapiyor
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100)); // 30 sn muhlet: sayfayi yukleme muhleti
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(200));  // 20 sn muhlet: elementi bulma muhleti
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50)); // 30 sn muhlet: sayfayi yukleme muhleti
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));  // 20 sn muhlet: elementi bulma muhleti
     }
 
     public static void BekleVeKapat(){
