@@ -18,7 +18,10 @@ public class _03_WindowsSize extends BaseDriver {
         driver.manage().window().maximize();    // ekrani max yapiyordu
         MyFunc.Wait(2);
         Dimension yeniBoyut = new Dimension(516,600);
-
+        Dimension ekranBoyutu = driver.manage().window().getSize();
+        System.out.println("ekranBoyutu.width = " + ekranBoyutu.width);
+        System.out.println("ekranBoyutu.height = " + ekranBoyutu.height);
+        
         driver.manage().window().setSize(yeniBoyut);    // ekrandaki pencereyi
         // istenilen boyutlara getirdim, teste boyle basliyorum
 
